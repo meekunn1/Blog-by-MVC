@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <nav class="navbar navbar-expand-sm bg-body-secondary">
+            <div class="container-fluid">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
+                </ul>
+                  <div class="container">
+                    <h1>
+                      Page Title
+                    </h1>
+
+                  </div>
+              </div>
+            </div>
+          </nav>
+          <main class="container">
+
+            <div class="container">
+                <h2>Login</h2>
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary btn-sm">Login!</button>
+                    <button type="link" class="btn btn-link">Sign-up instead</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <h2>Sign-up</h2>
+                <form>
+                    <div class="mb-3">
+                    <label for="newEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="newEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="newPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="NewPassword">
+                    </div>
+                    <div class="col-sm-6">
+                      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                      <button type="link" class="btn btn-link">Login instead</button>
+                      </div>
+                </form>
+            </div>
+
+            <h2> View Post sample</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Original post title</h5>
+                <p class="card-text">Original post content here.</p>
+                  <div class="d-grid gap-2 col-3 mx-auto">
+                  <button type="button" class="btn btn-secondary btn-sm">add comment</button>
+                  </div>
+              </div>
+            </div>
+
+            <h2> Add comment sample</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Original post title</h5>
+                <p class="card-text">Original post content here.</p>
+                <div class="mb-3">
+                  <label for="addComment" class="form-label">Comment</label>
+                  <textarea class="form-control" id="addComment" rows="3" placeholder="enter comment here."></textarea>
+                </div>
+                  <div class="d-grid gap-2 col-3 mx-auto">
+                  <button type="button" class="btn btn-secondary btn-sm">Post</button>
+                  </div>
+              </div>
+            </div>
+
+            <h2> edit page sample</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="updateTitle" class="form-label">Title</label>
+                  <input type="email" class="form-control" id="updateTitle" value="default">
+                </div>
+                <div class="mb-3">
+                  <label for="updateContent" class="form-label">Content</label>
+                  <textarea class="form-control" id="updateContent" rows="3">Default text</textarea>
+                </div>
+                  <div class="d-grid gap-2 col-3 mx-auto">
+                  <button type="button" class="btn btn-secondary btn-sm">Update Post</button>
+                  <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                  </div>
+              </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
