@@ -21,7 +21,7 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  {{#if logged_in}}
+                  {{#if loggedIn}}
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
                   </li>
@@ -47,7 +47,7 @@
         </main>
     </div>
 
-    {{#if logged_in}}
+    {{#if loggedIn}}
     <script src="/public/js/logout.js"></script>
     {{/if}}
 </body>
