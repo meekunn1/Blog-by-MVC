@@ -14,7 +14,7 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autIncrement: true,
+      autoIncrement: true,
     },
     username: {
       type: DataTypes.STRING,
@@ -35,16 +35,21 @@ User.init(
   },
   {
     hooks: {
-      async beforeCreate(newUser) {
-        newUser, (password = await bcrypt.hash(newUser.password, 10));
-        return newUser;
+      beforeCreate: async (newUserData) => {
+          newUserData.password = await bcrypt.hash(newUserData.password, 10);
+          return newUserData;
       },
-    },
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: "user",
+      beforeUpdate: async (updateUserData) => {
+          updateUserData.password = await bcrypt.hash(updateUserData.password, 10);
+          return updateUserData;
+      },
+  },
+  //freezeTableName: true makes it so table name will not have 's' at the end.
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'user',
   }
 );
 
