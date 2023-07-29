@@ -1,0 +1,15 @@
+{{#if board.length}}
+{{#each board as |board|}}
+<div class="card">
+    <div class="card-body">
+    <h5 class="card-title">
+        <a href='/board/{{board.id}}'>{{board.title}}</a>
+    </h5>
+    <p class="card-text">{{board.content}}</p>
+    <p>Posted by: {{board.user.name}} on {{board.date}}</p>
+    </div>
+</div>
+{{/each}}
+{{/if}}
+
+<script src="./js/dashboard.js"></script>

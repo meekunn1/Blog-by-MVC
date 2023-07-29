@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+    <h5 class="card-title">
+        <a href='/board/{{board.id}}'>{{board.title}}</a>
+    </h5>
+    <p class="card-text">{{board.content}}</p>
+    <p>Posted by: {{board.user.name}} on {{board.date}}</p>
+        <div class="d-grid gap-2 col-3 mx-auto">
+        <button type="button" class="btn btn-secondary btn-sm">add comment</button>
+        </div>
+    </div>
+</div>
+
+<script src="./js/board.js"></script>
